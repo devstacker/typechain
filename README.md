@@ -26,13 +26,12 @@ npm install -g typescript
   ```json
   {
       "compilerOptions": {
-          "module": "commonjs", //nodejs를 평범하게 사용, export/import
+          "module": "commonjs",
           "target": "ES2015",
           "sourceMap": true
       },
-      //어떤 파일들이 컴파일 과정에 포함되는지 명시
-      "include": ["index.ts"],// //컴파일 과정에서 포함할 파일의 배열을 적으면됨
-      "exclude": ["node_modules"],
+      "include": ["index.ts"],
+      "exclude":  ["node_modules"],
   }
   ```
 
