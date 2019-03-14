@@ -69,30 +69,29 @@ npm install -g typescript
 
   - `tsc-watch` 사용
 
-  ```shell
-  npm install tsc-watch --save-dev
-  ```
+    ```shell
+    npm install tsc-watch --save-dev
+    ```
 
   - package.json
 
-  ```json
-  {
-       "scripts": {
-      "start": "tsc-watch --onSuccess \" node dist/index.js \" "
+    ```json
+    {
+         "scripts": {
+        "start": "tsc-watch --onSuccess \" node dist/index.js \" "
+      }
     }
-  }
-  ```
+    ```
 
   - tsconfig.json
 
-  ```json
-  {
-    "compilerOptions": {
-      "outDir": "dist"
-    },
-    "include": ["src/**/*"],
-  }
-  ```
+    ```json
+    {
+      "compilerOptions": {
+        "outDir": "dist"
+      },
+      "include": ["src/**/*"],
+    }
+    ```
 
   > `tsc-watch` 설치하고 json파일 수정후 `npm start` 했는데 "Cannot find module 'typescript/bin/tsc" 오류발생하여  `npm install typescript --save-dev` 로 해결함(?)
-
