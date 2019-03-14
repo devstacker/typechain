@@ -8,9 +8,14 @@
     "url": "git+https://github.com/devstacker/typechain.git"
   },
   "scripts": {
-    "start": "node index.js",
-    "prestart": "tsc"
+    "start": "tsc-watch --onSuccess \"node dist/index.js\" "
   },
   "author": "devstacker",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "tsc-watch": "^2.1.2"
+  }
 }

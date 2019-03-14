@@ -39,7 +39,7 @@ npm install -g typescript
 
 - 터미널에서 `tsc` 를 입력하면 `index.js` 랑 `index.js.map` 파일이 생김
 
-- `tsc` 대신 `npm start` 사용할 것임
+- `tsc` 대신 `npm start` 사용
 
   - package.json
 
@@ -64,3 +64,35 @@ npm install -g typescript
     ```
 
     
+
+-  watch 모드에서 compile 하기
+
+  - `tsc-watch` 사용
+
+  ```shell
+  npm install tsc-watch --save-dev
+  ```
+
+  - package.json
+
+  ```json
+  {
+       "scripts": {
+      "start": "tsc-watch --onSuccess \" node dist/index.js \" "
+    }
+  }
+  ```
+
+  - tsconfig.json
+
+  ```json
+  {
+    "compilerOptions": {
+      "outDir": "dist"
+    },
+    "include": ["src/**/*"],
+  }
+  ```
+
+  > `tsc-watch` 설치하고 json파일 수정후 `npm start` 했는데 "Cannot find module 'typescript/bin/tsc" 오류발생하여  `npm install typescript --save-dev` 로 해결함(?)
+
