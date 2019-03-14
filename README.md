@@ -64,32 +64,32 @@ npm install -g typescript
     ```
 
 -  watch 모드에서 compile 하기
-  - `tsc-watch` 사용
+     - `tsc-watch` 사용
 
-    ```shell
-    npm install tsc-watch --save-dev
-    ```
+      ```shell
+      npm install tsc-watch --save-dev
+      ```
 
-  - package.json
+     - package.json
 
-    ```json
-    {
-         "scripts": {
-        "start": "tsc-watch --onSuccess \" node dist/index.js \" "
-      }
-    }
-    ```
+       ```json
+       {
+            "scripts": {
+           "start": "tsc-watch --onSuccess \" node dist/index.js \" "
+         }
+       }
+       ```
 
-  - tsconfig.json
+     - tsconfig.json
 
-    ```json
-    {
-      "compilerOptions": {
-        "outDir": "dist"
-      },
-      "include": ["src/**/*"],
-    }
-    ```
+       ```json
+       {
+         "compilerOptions": {
+           "outDir": "dist"
+         },
+         "include": ["src/**/*"],
+       }
+       ```
 
   
 
