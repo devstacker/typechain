@@ -63,10 +63,7 @@ npm install -g typescript
     
     ```
 
-    
-
 -  watch 모드에서 compile 하기
-
   - `tsc-watch` 사용
 
     ```shell
@@ -93,5 +90,7 @@ npm install -g typescript
       "include": ["src/**/*"],
     }
     ```
+
+  
 
   > `tsc-watch` 설치하고 json파일 수정후 `npm start` 했는데 "Cannot find module 'typescript/bin/tsc" 오류발생하여  `npm install typescript --save-dev` 로 해결함(?)
