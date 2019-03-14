@@ -66,9 +66,9 @@ npm install -g typescript
 -  watch 모드에서 compile 하기
      - `tsc-watch` 사용
 
-      ```shell
-      npm install tsc-watch --save-dev
-      ```
+        ```shell
+        npm install tsc-watch --save-dev
+        ```
 
      - package.json
 
